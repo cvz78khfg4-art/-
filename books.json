@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "JavaScript для начинающих",
+    "author": "Иван Петров",
+    "year": 2023,
+    "isIssued": false
+  },
+  {
+    "id": 2,
+    "title": "Чистый код",
+    "author": "Роберт Мартин",
+    "year": 2008,
+    "isIssued": true
+  },
+  {
+    "id": 4,
+    "title": "Идеальный программист",
+    "author": "Роберт Мартин",
+    "year": 2011,
+    "isIssued": false
+  }
+]

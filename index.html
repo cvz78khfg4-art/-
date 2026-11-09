@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Медиа-галерея</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>📷 Медиа-галерея</h1>
+    <p>Все файлы отдаются сервером на Node.js через потоки (createReadStream().pipe)</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Галерея</h2>
+      <div class="gallery">
+        <figure><img src="/images/mountains.jpg" alt="Горы"><figcaption>Горы</figcaption></figure>
+        <figure><img src="/images/sea.jpg" alt="Море"><figcaption>Море</figcaption></figure>
+        <figure><img src="/images/city.jpg" alt="Город"><figcaption>Город ночью</figcaption></figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Аудио-превью</h2>
+      <audio controls preload="metadata" src="/audio/melody.mp3"></audio>
+    </section>
+
+    <section>
+      <h2>Проверка MIME-типов</h2>
+      <p><a href="/files/archive.zip">archive.zip</a> — неизвестное расширение, отдаётся как <code>application/octet-stream</code>.</p>
+      <p><a href="/missing.png">missing.png</a> — несуществующий файл: сервер вернёт 404 и не упадёт.</p>
+    </section>
+  </main>
+</body>
+</html>

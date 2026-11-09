@@ -1,0 +1,17 @@
+### Получить все устройства
+GET http://localhost:3000/devices
+
+### Фильтр по статусу
+GET http://localhost:3000/devices?status=work
+
+### Добавить устройство
+POST http://localhost:3000/devices
+Content-Type: application/json
+
+{"name": "Принтер", "status": "repair"}
+
+### Ошибка валидации (нет name)
+POST http://localhost:3000/devices
+Content-Type: application/json
+
+{"status": "work"}
